@@ -45,6 +45,9 @@ importers:
       '@react-native/new-app-screen':
         specifier: 0.80.1
         version: 0.80.1(@types/react@19.1.8)(react-native@0.80.1)(react@19.1.0)
+      '@repo/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       react:
         specifier: 19.1.0
         version: 19.1.0
@@ -107,30 +110,11 @@ importers:
         specifier: 5.0.4
         version: 5.0.4
 
-  apps/web:
+  apps/webApp:
     dependencies:
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-    devDependencies:
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/typescript-config
-      eslint:
-        specifier: ^8.57.0
-        version: 8.57.0
-      typescript:
-        specifier: 5.5.4
-        version: 5.5.4
-      vite:
-        specifier: ^5.1.4
-        version: 5.1.4
-
-  apps/webApp:
-    dependencies:
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -194,9 +178,6 @@ importers:
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
-      '@repo/ui':
-        specifier: workspace:*
-        version: 'link:'
       eslint:
         specifier: ^8.57.0
         version: 8.57.0
